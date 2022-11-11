@@ -102,6 +102,8 @@ StringSet StringSet :: operator+ (StringSet other)
     StringSet res;
     res.vec.insert(res.vec.begin(), vec.begin(), vec.end());
     res.vec.insert(res.vec.end(), other.vec.begin(), other.vec.end());
+    sort( res.vec.begin(), res.vec.end() );
+    res.vec.erase( unique( res.vec.begin(), res.vec.end() ), res.vec.end() );
     return res;
 }
 //-----------------------------------------------------------------------------------
