@@ -3,6 +3,7 @@
 #include "FileLabelGenerator.h"
 using namespace std;
 int main(){
+
     LabelGenerator figureNumbers("Figure ", 1);
     LabelGenerator pointNumbers("P", 0);
 

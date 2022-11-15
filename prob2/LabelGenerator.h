@@ -1,5 +1,4 @@
 
-
 #ifndef MAIN_CPP_LABELGENERATOR_H
 #define MAIN_CPP_LABELGENERATOR_H
 #include<iostream>
@@ -14,9 +13,9 @@ public:
     LabelGenerator();
     LabelGenerator(string s,int in);
     virtual string nextLabel();
-    string getName();
+   // string getName();
     int getIndex();
-    friend ostream &operator << (ostream &out, LabelGenerator obj);
+  //  friend ostream &operator << (ostream &out, LabelGenerator obj);
 };
 
 

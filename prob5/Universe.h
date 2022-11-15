@@ -10,6 +10,7 @@
 #include<string>
 #include "conio.h"
 using namespace std;
+
 #define SIZE1 20
 #define SIZE2 20
 

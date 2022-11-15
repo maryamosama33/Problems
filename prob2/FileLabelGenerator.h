@@ -23,13 +23,16 @@ public:
             cout << "error ";
             exit(0);
         }
+
+        // reading lines from the file
+
         string line;
         while(getline(file,line)) {
             v.push_back(line);
         }
     }
     string nextLabel();
-    friend ostream &operator << (ostream &out, LabelGenerator obj);
+  //  friend ostream &operator << (ostream &out, LabelGenerator obj);
 };
 
 
